@@ -6,6 +6,7 @@ orbs:
 
 jobs:
   job_1:
+    executor: node/default
     steps:
       - checkout
       - run:
