@@ -18,6 +18,15 @@ jobs:
           name: Create Folder for Published files
           command: |
             mkdir dist-zip
+      - run:
+          name: Copy Files to coinwatcher
+          command: |
+            cp manifest.json ./coinwatcher
+            cp dist ./coinwatcher -r
+      - run:
+          name: Zip File
+          command: |
+            zip
 
 workflows:
   workflow_1:
