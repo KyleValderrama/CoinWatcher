@@ -53,7 +53,8 @@ import { mapGetters } from "vuex";
 export default {
   data: () => ({
     search: "",
-    filterCoins: []
+    filterCoins: [],
+    focused: false
   }),
   computed: {
     ...mapGetters({
